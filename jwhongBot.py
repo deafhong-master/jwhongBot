@@ -2,7 +2,7 @@ import telebot
 
 API_TOKEN = '240292131:AAHCbFDidvc4KMCDNsR-CraS8_-jxz4RI0U'
 
-import bus.Bus_Seoul
+from bus.Bus_Seoul import busSeoul
 
 bot = telebot.TeleBot(API_TOKEN)
 
