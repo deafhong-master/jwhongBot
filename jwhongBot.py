@@ -19,7 +19,7 @@ def echo_message(message):
     
 @bot.message_handler(commands=['bus'])
 def bus_info(message):
-	bot.reply_to("bus information")
+	bot.reply_to(messabe, "bus information")
 
 bot.polling() 
     
