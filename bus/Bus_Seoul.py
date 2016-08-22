@@ -3,4 +3,4 @@ class Bus_Seoul :
         self.bot = bot
 
     def call:
-        print('call API')
+    	return "call api"
