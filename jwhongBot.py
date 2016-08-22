@@ -14,7 +14,7 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['bus'])
 def bus_info(message):
-	bot.reply_to(messabe, "bus information")
+	bot.reply_to(message, "bus information")
 
 # Handle all other messages with content_type 'text' ( content_types defaults to ['text'])
 @bot.message_handler(func=lambda message: True)
