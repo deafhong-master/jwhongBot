@@ -25,8 +25,9 @@ def bus_info(message):
     request = Request(url + queryParams)
     request.get_method = lambda: 'GET'
     response_body = urlopen(request).read()
+    bot.reply_to(message, response_body)
     # print response_body
-	bot.reply_to(message, response_body)
+	
 
 # Handle all other messages with content_type 'text' ( content_types defaults to ['text'])
 @bot.message_handler(func=lambda message: True)
