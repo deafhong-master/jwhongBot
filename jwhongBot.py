@@ -1,6 +1,6 @@
 import telebot
 
-from bus.Bus_Seoul import bus_seoul
+from bus.bus_seoul import bus_seoul
 
 API_TOKEN = '240292131:AAHCbFDidvc4KMCDNsR-CraS8_-jxz4RI0U'
 
@@ -15,7 +15,6 @@ def send_welcome(message):
     print('testMessage')
 
 @bot.message_handler(commands=['bus'])
-
 def bus_info(message):
 	bot.reply_to(message, bus_seoul.call())
 
